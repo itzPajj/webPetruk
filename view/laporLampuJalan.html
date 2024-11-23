@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PETRUK - Pengaduan Infrastruktur</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg sticky-top py-lg-3 bg-dark"></nav>
+      <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-lg-5 py-lg-0" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+        <a href="index.html">
+          <img class="logo px-lg-4" src="../img/logoBlack.png" alt="LOGO PELAN" >
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav navbar-menu">
+            <a href="index.html" class="nav-item nav-link">
+              <i class="fas fa-home"></i>
+              HOME
+            </a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PROFIL</a>
+              <div class="dropdown-menu bg-light m-0">
+                <a href="vm.html" class="dropdown-item">VISI DAN MISI</a>
+                <a href="profile.html" class="dropdown-item">PROFILE</a>
+                <a href="filosofi.html" class="dropdown-item">FILOSOFI</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">INFORMASI</a>
+              <div class="dropdown-menu bg-light m-0">
+                <a href="#" class="dropdown-item">BERITA</a> 
+                <a href="#" class="dropdown-item">STATISTIK</a>
+                <a href="#" class="dropdown-item">INFO PELAPORAN</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">PELAPORAN</a>
+              <div class="dropdown-menu bg-light m-0">
+                <a href="laporJalan.html" class="dropdown-item">PELAPORAN JALAN</a>
+                <a href="laporLampuLALIN.html" class="dropdown-item">PELAPORAN LALU LINTAS</a>
+                <a href="laporLampuJalan.html" class="dropdown-item">PELAPORAN LAMPU JALAN</a>
+                <a href="laporJembatan.html" class="dropdown-item">PELAPORAN JEMBATAN</a>
+                <a href="laporTrotoar.html" class="dropdown-item">PELAPORAN TROTOAR</a>
+                <a href="#" class="dropdown-item">PELAPORAN JALUR SEPEDA</a>
+              </div>
+            </div>
+            <a href="donasi.html" class="nav-item nav-link">DONASI</a>
+            <a href="faq.html" class="nav-item nav-link">FAQ</a>
+            <a href="#" class="nav-item nav-link">TENTANG KAMI</a>
+            <a href="kontak.html" class="nav-item nav-link">KONTAK KAMI</a>
+          </div>
+        </div>
+        <div class="ml-4">
+          <a class="navbar-brand" href="#">
+              <img src="../img/akun.jpg" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
+            </a>
+      </div>
+      </nav>
+    </section>
+    <!-- Navbar End -->
+
+  <!-- Content Start -->
+  <div class="container-fluid pelaporan wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5 jalan-rusak">
+      <form action="">
+      <div class="col">
+        <div class="card-header text-center bg-dark">
+          <h2 class="text-light">Pelaporan Lampu Jalan</h2>
+        </div>
+        <div class="card-body">
+            <div class="my-3"> 
+              <label for="nama" class="col-sm-2 col-form-label">Nama : </label>
+              <input type="text" class="form-control" id="namaPelaporJalan" placeholder="Hartono">
+            </div>
+            <div class="my-3"> 
+              <label for="email" class="col-sm-2 col-form-label">Alamat Email : </label>
+                <input type="email" class="form-control" id="emailPelaporJalan" placeholder="example@gmail.com">
+            </div>
+            <div class="my-3"> 
+              <label for="notlp" class="col-sm-2 col-form-label">No. Telepon : </label>
+              <input type="text" class="form-control" id="notlpPelaporJalan " placeholder="08123456789">
+            </div>
+            <div class="my-3">
+              <label for="alamatLengkap">Alamat Lampu Jalan</label>
+              <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Jl. Kusuma Bangsa..."></textarea>
+            </div>
+            <div class="my-3">
+              <label for="kondisi" class="col-2 col-form-label">Kondisi</label>
+              <select class="form-select">
+                <option selected>--Pilih Kondisi--</option>
+                <option value="mati">Mati</option>
+                <option value="Menyala berkedip">Menyala Berkedip</option>
+                <option value="lainnya">Lainnya..</option>
+              </select>
+            </div>
+            <div class="my-3">
+              <label for="foto">Upload Gambar </label>
+              <input type="file" id="keadaan" name="keadaan">
+            </div>
+            <div class="my-3">
+              <div class="btn btn-primary">Kirim
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <!-- ----Content End----- -->
+      
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 wow fadeInUp">
+            <img class="pb-sm-3" src="../img/logoWhite.png" alt="Logo Pelan" width="150px">
+            <p>
+              FINAL PROJECT WEB PROGRAMMING
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-square btn-outline-primary me-1" href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="btn btn-square btn-outline-primary me-1" href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn btn-square btn-outline-primary me-1" href="">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a class="btn btn-square btn-outline-primary me-0" href="">
+                <i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+            
+          <div class="col-lg-0 col-md-4 wow fadeInUp">
+            <p>Supported By:</p>
+            <h4 class="text-light">UNIVERSITAS AMIKOM YOGYAKARTA</h4>
+            <a href="timCreative.html"> CREATIVE TIM </a>
+            </div>
+      </div>
+    </div>
+
+      <div class="container-fluid copyright">
+        <div class="container justify-content-center">
+          <div class="row">
+            <div class="col-md-6 text-center mb-3 mb-md-0">
+              <a>copyright </a> &copy; <a href="#">PETRUK - Pengaduan Infrastruktur</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Back to Top -->
+    <a href="index.html" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
